@@ -1,0 +1,37 @@
+# Ambientes virtuais
+venv/
+.env/
+
+# Arquivos compilados Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos do sistema operacional
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Configurações específicas do IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dependências do TensorFlow/Keras
+saved_model/
+*.h5
+*.tflite
+*.pb
+
+# Modelos e cache
+checkpoints/
+cache/
+logs/
