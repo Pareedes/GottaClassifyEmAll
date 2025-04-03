@@ -59,8 +59,9 @@ model.compile(optimizer=Adam(learning_rate=0.001),
 history = model.fit(
     train_generator,
     validation_data=val_generator,
-    epochs=10
+    epochs=20
 )
 
 # Salvar modelo
-model.save("pokemon_classifier.h5")
+#model.save("pokemon_classifier.h5")
+model.save("pokemon_classifier.keras")

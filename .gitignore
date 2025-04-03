@@ -30,6 +30,7 @@ saved_model/
 *.h5
 *.tflite
 *.pb
+*.keras
 
 # Modelos e cache
 checkpoints/

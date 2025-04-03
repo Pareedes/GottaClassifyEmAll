@@ -12,7 +12,7 @@ class_names = {
 }
 
 # Carregar o modelo treinado
-model = tf.keras.models.load_model("pokemon_classifier.h5")
+model = tf.keras.models.load_model("pokemon_classifier.keras")
 
 # Função para fazer a previsão de uma nova imagem
 def predict_image(img_path, model, target_size=(128, 128)):
@@ -29,7 +29,7 @@ def predict_image(img_path, model, target_size=(128, 128)):
     return class_index, confidence
 
 # Teste com uma imagem específica
-img_path = "z:/Sei la 4/ATIVIDADES EAD/EAD - IFTM - 8° Periodo/IA/GottaClassifyEmAll/test_images/squirtle.jpg"  # Substitua pelo caminho da imagem de teste
+img_path = "z:/Sei la 4/ATIVIDADES EAD/EAD - IFTM - 8° Periodo/IA/GottaClassifyEmAll/test_images/bulba.jpg"  # Substitua pelo caminho da imagem de teste
 class_index, confidence = predict_image(img_path, model)
 
 # Obter nome do Pokémon
