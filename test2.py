@@ -37,7 +37,9 @@ def save_result_image(img_path, pokemon_name, confidence, output_dir="result_ima
 
     font = ImageFont.truetype("arial.ttf", 50)
 
-    text = f"{pokemon_name} ({confidence:.2f}%)"
+    # Formatar a confiança como inteiro (0 a 100%)
+    confidence_percent = int(confidence * 100)
+    text = f"{pokemon_name} ({confidence_percent}%)"
 
     text_position = (10, 10)
 
@@ -67,7 +69,10 @@ if not os.path.exists(img_path):
 else:
     class_index, confidence = predict_image(img_path, model)
     pokemon_name = class_names.get(class_index, "Desconhecido")
-    print(f"Classe prevista: {class_index} ({pokemon_name}), Confiança: {confidence:.2f}%")
+
+    # Formatar a confiança como inteiro (0 a 100%) no terminal
+    confidence_percent = int(confidence * 100)
+    print(f"Classe prevista: {class_index} ({pokemon_name}), Confiança: {confidence_percent}%")
 
     # Salvar a imagem com o texto sobreposto
     save_result_image(img_path, pokemon_name, confidence)
