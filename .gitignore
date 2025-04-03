@@ -36,3 +36,6 @@ saved_model/
 checkpoints/
 cache/
 logs/
+
+# Pasta com os resultados salvos
+result_images/

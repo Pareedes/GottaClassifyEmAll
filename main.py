@@ -4,7 +4,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from tensorflow.keras.optimizers import Adam
 
-# Definições
 IMG_SIZE = (128, 128)
 BATCH_SIZE = 32
 DATASET_PATH = "data/"
